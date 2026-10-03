@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michi Terms and Conditions</title>
+<!--
+  Michi's terms and conditions. The theme matches the Sidekick project
+  plans (_docs/projects/20261003-posthog-initial/plan.html in the app repo).
+
+  Placeholders still to fill are marked <mark class="todo">. Search for
+  "todo" before publishing.
+-->
+<style>
+  :root {
+    --canvas: #F6F1E2;
+    --surface: #FFFFFF;
+    --surface-muted: #E2E8D6;
+    --border: #E0DBC6;
+    --hairline: #ECE7D4;
+    --ink: #2C3324;
+    --caption: #4A5440;
+    --accent: #3D5232;
+    --on-accent: #F6F1E2;
+    --open: #7C5A1F;
+    --open-wash: #F3EAD6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --canvas: #1B2418;
+      --surface: #232E1E;
+      --surface-muted: #2E3B27;
+      --border: #3B4D33;
+      --hairline: #2E3B27;
+      --ink: #F2ECD9;
+      --caption: #CBD6BD;
+      --accent: #B6C795;
+      --on-accent: #1B2418;
+      --open: #D3A863;
+      --open-wash: #33301F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --canvas: #1B2418;
+    --surface: #232E1E;
+    --surface-muted: #2E3B27;
+    --border: #3B4D33;
+    --hairline: #2E3B27;
+    --ink: #F2ECD9;
+    --caption: #CBD6BD;
+    --accent: #B6C795;
+    --on-accent: #1B2418;
+    --open: #D3A863;
+    --open-wash: #33301F;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 16px 64px;
+  }
+
+  header { margin-bottom: 32px; }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .meta li {
+    background: var(--surface-muted);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .meta .status { background: var(--accent); color: var(--on-accent); }
+
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin: 20px 0 8px;
+  }
+
+  h3:first-of-type { margin-top: 0; }
+
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  .caption { color: var(--caption); font-size: 15px; }
+
+  a {
+    color: var(--accent);
+    text-underline-offset: 2px;
+  }
+
+  .open-block {
+    background: var(--open-wash);
+    border-color: var(--open);
+  }
+
+  ul.plain, ol.plain { margin: 0 0 12px; padding-left: 20px; }
+  ul.plain:last-child, ol.plain:last-child { margin-bottom: 0; }
+  ul.plain li, ol.plain li { margin-bottom: 4px; }
+
+  ol.contents {
+    margin: 0;
+    padding-left: 24px;
+    columns: 2 220px;
+    column-gap: 24px;
+  }
+
+  ol.contents li { margin-bottom: 4px; break-inside: avoid; }
+
+  mark.todo {
+    background: var(--open-wash);
+    color: var(--open);
+    border: 1px dashed var(--open);
+    border-radius: 4px;
+    padding: 0 4px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>Michi terms and conditions</h1>
+    <p class="caption">The agreement between you and Lizzie Teo, who makes Michi. Written in plain English, so you can read it.</p>
+    <ul class="meta">
+      <li class="status">Draft</li>
+      <li>Last updated 3 October 2026</li>
+      <li>Australian law</li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>In short</h2>
+    <ul class="plain">
+      <li>Michi is a wellness app. It isn't medical care or therapy, and it isn't for emergencies.</li>
+      <li>You need to be 18 or older to use it.</li>
+      <li>What you write is yours. You can send yourself a copy of it, or delete it, at any time.</li>
+      <li>The panic button, the breathing, the crisis lines and your own good things are free, and they stay free.</li>
+      <li>Apple or Google bills the paid plan. You cancel it in your phone's settings.</li>
+      <li>Nothing here takes away your rights under the Australian Consumer Law, or under the law where you live.</li>
+    </ul>
+    <p class="caption">This summary is a guide only. The full terms below are the agreement.</p>
+  </section>
+
+  <section class="open-block">
+    <h2>Michi isn't for emergencies</h2>
+    <p>If you are in danger, or having thoughts of suicide or of hurting yourself, call 000 in Australia or your local emergency number.</p>
+    <p>In Australia, you can call Lifeline on 13&nbsp;11&nbsp;14 for free at any time. Michi's Me tab lists crisis lines for where you are.</p>
+  </section>
+
+  <section>
+    <h2>Contents</h2>
+    <ol class="contents">
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#agreeing">Agreeing to these terms</a></li>
+      <li><a href="#what-michi-is">What Michi is, and isn't</a></li>
+      <li><a href="#account">Your account</a></li>
+      <li><a href="#your-words">What you write</a></li>
+      <li><a href="#paying">Paying for Michi</a></li>
+      <li><a href="#fair-use">Using Michi fairly</a></li>
+      <li><a href="#ours">What belongs to us</a></li>
+      <li><a href="#others">Other services</a></li>
+      <li><a href="#privacy">Your privacy</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#ending">Ending things</a></li>
+      <li><a href="#responsibility">Our responsibility to you</a></li>
+      <li><a href="#disputes">If something goes wrong</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </section>
+
+  <section id="who">
+    <h2>1. Who we are</h2>
+    <p>Michi is made and run by Lizzie Teo, a sole trader in Australia. In these terms, "we", "us" and "our" mean Lizzie. "You" means the person using Michi.</p>
+    <p>You can reach us at <mark class="todo">[contact email]</mark>.</p>
+  </section>
+
+  <section id="agreeing">
+    <h2>2. Agreeing to these terms</h2>
+    <p>By downloading or using Michi, you agree to these terms and to our <a href="privacy-policy.html">privacy policy</a>. If you don't agree, please don't use Michi.</p>
+    <p>You need to be 18 or older to use Michi. If you're younger and having a hard time, Kids Helpline is free and open at any time in Australia on 1800&nbsp;55&nbsp;1800.</p>
+  </section>
+
+  <section id="what-michi-is">
+    <h2>3. What Michi is, and isn't</h2>
+    <p>Michi offers breathing, guided meditations, short lessons, gentle movement, colouring, and places to write down good things and worries. It's there to support your wellbeing from day to day.</p>
+
+    <h3>Not medical care</h3>
+    <p>Michi isn't therapy, counselling or a medical device. It doesn't diagnose or treat any condition, and nothing in it is medical advice. If you're worried about your physical or mental health, talk to a doctor or another health professional. Don't stop or change a treatment because of anything in Michi.</p>
+
+    <h3>The panic button</h3>
+    <p>The panic button breathes with you while a panic or anxiety attack passes. It doesn't stop or shorten an attack, and it isn't a treatment for panic disorder.</p>
+
+    <h3>Move with me</h3>
+    <p>Move with me includes walking on the spot, swinging your arms, stretching and star jumps. Only do what feels comfortable. Stop if you feel pain, dizziness or shortness of breath. If your chest hurts, stop and call 000 or your local emergency number. If you have a heart condition or an injury, or you're pregnant, check with a doctor before you start.</p>
+
+    <h3>Crisis lines</h3>
+    <p>Other organisations run the crisis lines Michi lists, and their numbers and hours can change. We check them, but we can't promise every line will answer. If one doesn't, call your local emergency number.</p>
+  </section>
+
+  <section id="account">
+    <h2>4. Your account</h2>
+    <ul class="plain">
+      <li>Michi gives you an account the first time you open it. The account has no name or email address. Your good things and worries are saved to it.</li>
+      <li>You can add an email address so your things are safe beyond this phone. We confirm it with a 6-digit code instead of a password, so anyone who can read your email can sign in to Michi. Keep your email account secure.</li>
+      <li>Until you add an email, your account belongs to this phone. If you delete Michi or lose your phone, we can't get your things back.</li>
+      <li>Your colouring and scribbles stay on your phone until your account has an email. After that, they're saved to your account too.</li>
+      <li>Your account is for you. Don't sign in to anyone else's.</li>
+    </ul>
+  </section>
+
+  <section id="your-words">
+    <h2>5. What you write</h2>
+
+    <h3>It's yours</h3>
+    <p>Your good things, your worries, the steps you plan and the pictures you colour and scribble all belong to you.</p>
+    <p>To run Michi, we need your permission to store, copy and back up these things, show them back to you, and check them as described below. You give us that permission, for that purpose only. We never sell what you write or use it for advertising.</p>
+
+    <h3>Automatic checks</h3>
+    <p>Before a good thing or a worry is saved, its words are checked automatically, both on your phone and by a moderation service. A good thing that contains hurtful words won't save until you change them. If anything you write suggests you might hurt yourself, Michi shows you crisis lines first, and your words can still be saved.</p>
+
+    <h3>Nobody is watching</h3>
+    <p>Nobody reviews what you write, and nobody is told about it. Michi can't send help to you. If you need help now, call a crisis line or emergency services.</p>
+
+    <h3>Keeping and deleting</h3>
+    <ul class="plain">
+      <li>You can send yourself a copy of everything from the Me tab.</li>
+      <li>You can delete everything from the Me tab. Deleting happens at once and can't be undone.</li>
+      <li>When you let a worry go, it's deleted for good.</li>
+    </ul>
+  </section>
+
+  <section id="paying">
+    <h2>6. Paying for Michi</h2>
+
+    <h3>Free, always</h3>
+    <p>These parts of Michi are free, and will stay free:</p>
+    <ul class="plain">
+      <li>The panic button and the breathing</li>
+      <li>The feeling picker</li>
+      <li>The crisis lines</li>
+      <li>Reading your own good things</li>
+      <li>Sending yourself a copy of everything</li>
+      <li>Deleting everything</li>
+    </ul>
+    <p>Other parts of Michi are free too. Some need the paid plan, and those show a small lock.</p>
+
+    <h3>The paid plan</h3>
+    <ul class="plain">
+      <li>The paid plan is a subscription. Before you confirm, the app shows its price, how often it renews and any free trial.</li>
+      <li>Apple (the App Store) or Google (Google Play) takes the payment. Your price is in your local currency and includes any tax the store charges.</li>
+      <li>The plan renews automatically at the end of each period, and the store charges you for the next one, until you cancel.</li>
+    </ul>
+
+    <h3>Free trials</h3>
+    <p>When you start a free trial, the store asks for your payment details. When the trial ends, the plan starts and you're charged, unless you cancel at least 24 hours before the end. If reminders are on, Michi reminds you two days before the first charge.</p>
+
+    <h3>Cancelling</h3>
+    <p>Cancel in your phone's subscription settings. On iPhone, open Settings, tap your name, then Subscriptions. On Android, open Google Play and go to Payments and subscriptions. Michi can't cancel for you, and deleting the app doesn't cancel the plan. After you cancel, the plan keeps working until the end of the period you've paid for.</p>
+
+    <h3>Refunds</h3>
+    <p>Apple and Google handle payments, so refunds go through them, under their rules: <a href="https://support.apple.com/en-au/118223">Apple</a> or <a href="https://support.google.com/googleplay/answer/2479637">Google Play</a>. This doesn't limit your rights under the Australian Consumer Law. If Michi has a problem and the store can't help, contact us.</p>
+
+    <h3>Price changes</h3>
+    <p>If the price goes up, Apple or Google will tell you before the change, and sometimes ask you to agree to it. You can cancel before the new price starts.</p>
+  </section>
+
+  <section id="fair-use">
+    <h2>7. Using Michi fairly</h2>
+    <p>We give you a personal licence to use Michi on devices you own or control, for your own non-commercial use. You can't transfer this licence to anyone else.</p>
+    <p>Please don't:</p>
+    <ul class="plain">
+      <li>copy, sell or share Michi's content, except in the ways the app offers</li>
+      <li>take the app apart or try to get its source code, except where the law allows it</li>
+      <li>try to get into other people's accounts or into our systems</li>
+      <li>overload, attack or interfere with Michi</li>
+      <li>create accounts automatically</li>
+      <li>use Michi to break the law.</li>
+    </ul>
+  </section>
+
+  <section id="ours">
+    <h2>8. What belongs to us</h2>
+    <p>Michi belongs to us or to the people who licensed parts of it to us. That includes its name, the character, the illustrations, the meditations and their recordings, the lessons, the sounds and the code.</p>
+    <p>You can keep, print and share the pictures you colour, and you can send the cards you make with Pass it on to anyone, as long as it's for personal use.</p>
+    <p>If you send us ideas or feedback, we may use them to improve Michi without owing you anything.</p>
+  </section>
+
+  <section id="others">
+    <h2>9. Other services</h2>
+    <p>Michi relies on other services to run. These include the App Store and Google Play, and the services that store your account and check what you write. The privacy policy names them.</p>
+    <p>The terms of the store you bought it from also cover your purchase. If you downloaded Michi from the App Store, <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard licence agreement</a> also applies. Apple and Google aren't responsible for Michi or for supporting it.</p>
+    <p>Other people run the websites and phone lines Michi links to, and we aren't responsible for them.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>10. Your privacy</h2>
+    <p>Our <a href="privacy-policy.html">privacy policy</a> explains how we handle your information. That includes the usage counts, which you can turn off with "Share how you use the app" on the Me tab.</p>
+  </section>
+
+  <section id="changes">
+    <h2>11. Changes</h2>
+    <p>Michi will change as we improve it. We may add, change or remove features, but the parts listed under <a href="#paying">Free, always</a> will stay free.</p>
+    <p>Before we remove something the paid plan includes, or change these terms in a way that matters to you, we'll tell you in the app at least 14 days ahead, where we can. If you don't agree with a change, you can cancel and stop using Michi. If you keep using Michi after a change starts, the new terms apply.</p>
+  </section>
+
+  <section id="ending">
+    <h2>12. Ending things</h2>
+    <ul class="plain">
+      <li><strong>You</strong> can stop using Michi at any time. Delete everything from the Me tab, and cancel the paid plan in your phone's settings.</li>
+      <li><strong>We</strong> may suspend or close an account that seriously or repeatedly breaks these terms, or that puts Michi or other people at risk. Where we can, we'll tell you first and give you time to send yourself a copy.</li>
+      <li>If we ever close Michi, we'll tell you at least 30 days ahead where we can, so you can send yourself a copy of everything.</li>
+    </ul>
+  </section>
+
+  <section id="responsibility">
+    <h2>13. Our responsibility to you</h2>
+    <p>Michi comes with guarantees that can't be excluded under the Australian Consumer Law. Nothing in these terms takes away those rights, or any rights the law where you live gives you.</p>
+    <p>Beyond those rights, and as far as the law allows:</p>
+    <ul class="plain">
+      <li>Michi is provided as it is. We work to keep it running and accurate, but we can't promise it will always be available or free of mistakes.</li>
+      <li>We aren't responsible for loss we couldn't reasonably have foreseen. We also aren't responsible for loss caused by things outside our control, such as your phone, your internet connection or another service going down.</li>
+      <li>Where the law lets us limit our liability, it's limited to the amount you paid for Michi in the 12 months before your claim.</li>
+    </ul>
+    <p>These terms don't limit any liability that the law doesn't allow to be limited.</p>
+  </section>
+
+  <section id="disputes">
+    <h2>14. If something goes wrong</h2>
+    <p>Please contact us first. Most problems can be sorted out quickly. If we can't sort it out together, you can contact the consumer protection agency in your state or territory, or the <a href="https://www.accc.gov.au/">ACCC</a>.</p>
+    <p>The law of <mark class="todo">[state or territory]</mark>, Australia, governs these terms, and its courts can hear disputes about them. If you live in another country, you keep the rights its law gives you, and you can bring a claim in your local courts.</p>
+    <p>If any part of these terms can't be enforced, the rest still applies. If we don't enforce a term straight away, we can still enforce it later. If someone else takes over Michi, we may transfer these terms to them, and your rights under them won't change.</p>
+  </section>
+
+  <section id="contact">
+    <h2>15. Contact</h2>
+    <p>Lizzie Teo<br>
+    <mark class="todo">[contact email]</mark><br>
+    Australia</p>
+  </section>
+
+</main>
+</body>
+</html>

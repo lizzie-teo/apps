@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michi Privacy Policy</title>
+<!--
+  Michi's privacy policy. The theme matches the Sidekick project plans
+  (_docs/projects/20261003-posthog-initial/plan.html in the app repo) and
+  terms-and-conditions.html beside it.
+
+  Placeholders still to fill are marked <mark class="todo">. Search for
+  "todo" before publishing.
+-->
+<style>
+  :root {
+    --canvas: #F6F1E2;
+    --surface: #FFFFFF;
+    --surface-muted: #E2E8D6;
+    --border: #E0DBC6;
+    --hairline: #ECE7D4;
+    --ink: #2C3324;
+    --caption: #4A5440;
+    --accent: #3D5232;
+    --on-accent: #F6F1E2;
+    --open: #7C5A1F;
+    --open-wash: #F3EAD6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --canvas: #1B2418;
+      --surface: #232E1E;
+      --surface-muted: #2E3B27;
+      --border: #3B4D33;
+      --hairline: #2E3B27;
+      --ink: #F2ECD9;
+      --caption: #CBD6BD;
+      --accent: #B6C795;
+      --on-accent: #1B2418;
+      --open: #D3A863;
+      --open-wash: #33301F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --canvas: #1B2418;
+    --surface: #232E1E;
+    --surface-muted: #2E3B27;
+    --border: #3B4D33;
+    --hairline: #2E3B27;
+    --ink: #F2ECD9;
+    --caption: #CBD6BD;
+    --accent: #B6C795;
+    --on-accent: #1B2418;
+    --open: #D3A863;
+    --open-wash: #33301F;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 16px 64px;
+  }
+
+  header { margin-bottom: 32px; }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .meta li {
+    background: var(--surface-muted);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .meta .status { background: var(--accent); color: var(--on-accent); }
+
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin: 20px 0 8px;
+  }
+
+  h3:first-of-type { margin-top: 0; }
+
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  .caption { color: var(--caption); font-size: 15px; }
+
+  a {
+    color: var(--accent);
+    text-underline-offset: 2px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 8px 12px 8px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  th { font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+
+  .table-wrap { overflow-x: auto; margin-bottom: 12px; }
+  .table-wrap:last-child { margin-bottom: 0; }
+
+  .open-block {
+    background: var(--open-wash);
+    border-color: var(--open);
+  }
+
+  ul.plain, ol.plain { margin: 0 0 12px; padding-left: 20px; }
+  ul.plain:last-child, ol.plain:last-child { margin-bottom: 0; }
+  ul.plain li, ol.plain li { margin-bottom: 4px; }
+
+  ol.contents {
+    margin: 0;
+    padding-left: 24px;
+    columns: 2 220px;
+    column-gap: 24px;
+  }
+
+  ol.contents li { margin-bottom: 4px; break-inside: avoid; }
+
+  mark.todo {
+    background: var(--open-wash);
+    color: var(--open);
+    border: 1px dashed var(--open);
+    border-radius: 4px;
+    padding: 0 4px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>Michi privacy policy</h1>
+    <p class="caption">What Michi keeps, where it goes and what you can do about it. Written in plain English, so you can read it.</p>
+    <ul class="meta">
+      <li class="status">Draft</li>
+      <li>Last updated 3 October 2026</li>
+      <li>Australian Privacy Act</li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>In short</h2>
+    <ul class="plain">
+      <li>You can use Michi without giving your name or an email address.</li>
+      <li>Your good things and worries are saved to your account so they survive a new phone. They're stored in Sydney.</li>
+      <li>Before saving them, an automatic check reads your good things and worries. It uses OpenAI, which keeps the words for up to 30 days.</li>
+      <li>Usage counts show which screens open. They contain nothing you write and nothing that names you, and you can turn them off.</li>
+      <li>There are no ads in Michi. We never sell your information or track you across other apps.</li>
+      <li>You can get a copy of everything, or delete everything, at any time.</li>
+    </ul>
+    <p class="caption">This summary is a guide only. The full policy below is what we commit to.</p>
+  </section>
+
+  <section>
+    <h2>Contents</h2>
+    <ol class="contents">
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#collect">What we collect</a></li>
+      <li><a href="#phone">What stays on your phone</a></li>
+      <li><a href="#use">How we use it</a></li>
+      <li><a href="#checks">Automatic checks</a></li>
+      <li><a href="#share">Who we share it with</a></li>
+      <li><a href="#overseas">Information sent overseas</a></li>
+      <li><a href="#keep">How long we keep it</a></li>
+      <li><a href="#safe">Keeping it safe</a></li>
+      <li><a href="#rights">Your choices and rights</a></li>
+      <li><a href="#age">Age</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#complaints">Questions and complaints</a></li>
+    </ol>
+  </section>
+
+  <section id="who">
+    <h2>1. Who we are</h2>
+    <p>Michi is made and run by Lizzie Teo, a sole trader in Australia. In this policy, "we", "us" and "our" mean Lizzie. We handle your information under the Australian Privacy Act 1988 and the Australian Privacy Principles.</p>
+    <p>This policy goes with our <a href="terms-and-conditions.html">terms and conditions</a>. You can reach us at <mark class="todo">[contact email]</mark>.</p>
+  </section>
+
+  <section id="collect">
+    <h2>2. What we collect</h2>
+
+    <h3>Your account</h3>
+    <p>The first time you open Michi, it creates an account with a random ID. The account has no name, no email address and no password. If you add an email address later, we keep it, along with when you confirmed it and when you last signed in.</p>
+
+    <h3>What you write and draw</h3>
+    <ul class="plain">
+      <li>Your good things, including anything you put in the tomorrow box</li>
+      <li>Your worries, the steps you plan for them and when you asked to be reminded</li>
+      <li>Your colouring and scribbles, once your account has an email address. Until then, they stay on your phone</li>
+    </ul>
+    <p>What you write may include information about your health, which the law treats as sensitive. We only collect it because you choose to write it in Michi, and you can withdraw it at any time by deleting it.</p>
+
+    <h3>If you subscribe</h3>
+    <p>We keep a record of your plan: when it started, when it renews and whether a trial is running. It's linked to your account ID. Apple or Google takes the payment, and we never see your card details.</p>
+
+    <h3>Usage counts</h3>
+    <p>While "Share how you use the app" is on, Michi counts which screens open and what gets finished, such as a meditation played to the end. Each count carries your app version, your phone's model and operating system, and your country.</p>
+    <p>The counts carry nothing you write, no feeling you pick, no body sensation and no length of time. They use a random ID for this install, which isn't linked to your account or your email. Your IP address is used to work out your country and then discarded.</p>
+
+    <h3>Technical information</h3>
+    <p>When Michi talks to our servers, our hosting provider records technical details, such as IP addresses and times, to keep the service running and secure.</p>
+
+    <h3>When you contact us</h3>
+    <p>If you email us, we keep your email address and what you send us so we can reply.</p>
+  </section>
+
+  <section id="phone">
+    <h2>3. What stays on your phone</h2>
+    <p>These never leave your phone:</p>
+    <ul class="plain">
+      <li>Your settings, and the reminders you set. Your phone books the reminders itself</li>
+      <li>Your colouring and scribbles, until your account has an email address</li>
+      <li>The feeling you pick, the feeling dial and the body sheet. They aren't saved anywhere</li>
+      <li>The country Michi works out from your time zone and language, to show crisis lines for where you are. Michi never asks for your location</li>
+    </ul>
+    <p>Michi asks for only two permissions. One is to send reminders. The other is to save a picture or a card to your photos, and Michi never looks at your photos. Michi plays sound but never uses your microphone.</p>
+  </section>
+
+  <section id="use">
+    <h2>4. How we use it</h2>
+    <p>We use your information to:</p>
+    <ul class="plain">
+      <li>save what you write and draw, and show it back to you on any phone you sign in on</li>
+      <li>send you a sign-in code when you add an email address or sign in</li>
+      <li>check what you write before it's saved, and show crisis lines when they might help</li>
+      <li>know whether you have the paid plan</li>
+      <li>see which parts of Michi people use, so we can improve it</li>
+      <li>reply when you contact us</li>
+      <li>keep Michi secure, and meet our legal obligations.</li>
+    </ul>
+    <p>We don't use what you write for advertising, and we don't use it to train AI. We don't look at what you write unless you ask us to help with something, or the law requires it.</p>
+  </section>
+
+  <section id="checks">
+    <h2>5. Automatic checks</h2>
+    <p>Before a good thing or a worry is saved, a computer program checks its words. It runs first on your phone, then on our server through OpenAI's moderation service. OpenAI gets only the words. It doesn't get your account ID or your email address.</p>
+    <ul class="plain">
+      <li>A good thing that contains hurtful words won't save until you change them.</li>
+      <li>If something you write suggests you might hurt yourself, Michi shows you crisis lines first. Your words can still be saved.</li>
+    </ul>
+    <p>We don't keep the words that were checked or the result. Nobody is alerted, and nobody contacts you. These checks don't decide anything else about you, such as what you pay or which parts of Michi you can use.</p>
+  </section>
+
+  <section id="share">
+    <h2>6. Who we share it with</h2>
+    <p>We never sell your information. We share it only with the services that help run Michi, and only what each one needs:</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Service</th><th>What it gets</th><th>Where</th></tr>
+        <tr><td>Supabase</td><td>Your account, your email address if you add one, everything you save, and technical logs</td><td>Sydney, Australia</td></tr>
+        <tr><td>OpenAI</td><td>The words of a good thing or worry, to check them, without your account</td><td>United States</td></tr>
+        <tr><td>Brevo</td><td>Your email address, to send your sign-in code</td><td>European Union</td></tr>
+        <tr><td>RevenueCat</td><td>Your account ID and your plan's history</td><td>United States</td></tr>
+        <tr><td>PostHog</td><td>Usage counts, with a random install ID, your phone's model and your country</td><td>United States</td></tr>
+        <tr><td>Apple or Google</td><td>Your payment, under their own privacy policies</td><td>United States and other countries</td></tr>
+      </table>
+    </div>
+    <p>We may also share information if the law requires it, or to protect someone's safety. If someone else ever takes over Michi, your information would go to them, under this policy, and we'd tell you first.</p>
+  </section>
+
+  <section id="overseas">
+    <h2>7. Information sent overseas</h2>
+    <p>Your account and everything you save are stored in Australia. Some of the services above are overseas: OpenAI, RevenueCat and PostHog are in the United States, and Brevo is in the European Union. Each one is bound by its own terms to use the information only to provide its service to us, and to keep it secure.</p>
+  </section>
+
+  <section id="keep">
+    <h2>8. How long we keep it</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>What</th><th>How long</th></tr>
+        <tr><td>Your good things, worries and pictures</td><td>Until you delete them. We don't keep backups, so a deletion is final straight away</td></tr>
+        <tr><td>A deleted picture</td><td>What you drew is removed at once. A small record stays, holding the picture's ID, which page it was and two dates, so your other phones know to delete it too</td></tr>
+        <tr><td>An account with no email and nothing saved</td><td>Deleted after 30 days</td></tr>
+        <tr><td>Words sent for checking</td><td>We keep none of them. OpenAI keeps them for up to 30 days to watch for misuse, then deletes them</td></tr>
+        <tr><td>Usage counts</td><td>One year, under our plan with PostHog. They aren't linked to you, so we can't find yours to delete them. Turning sharing off stops new ones</td></tr>
+        <tr><td>Your plan's history</td><td>As long as tax law requires us to keep records of sales</td></tr>
+        <tr><td>Emails you send us</td><td>As long as we need them to help you</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="safe">
+    <h2>9. Keeping it safe</h2>
+    <ul class="plain">
+      <li>Everything Michi sends is encrypted on its way to our servers, and stored encrypted.</li>
+      <li>Each account can only reach its own entries. The database itself enforces this, not just the app.</li>
+      <li>Your sign-in is kept in your phone's secure storage.</li>
+    </ul>
+    <p>No system is perfectly secure. If a data breach is likely to cause you serious harm, we'll tell you and the Office of the Australian Information Commissioner, as the law requires.</p>
+  </section>
+
+  <section id="rights">
+    <h2>10. Your choices and rights</h2>
+    <ul class="plain">
+      <li><strong>Stay anonymous.</strong> You don't need to give us your name or an email address to use Michi.</li>
+      <li><strong>Turn off usage counts</strong> with "Share how you use the app" on the Me tab.</li>
+      <li><strong>Get a copy</strong> of everything with "Send me a copy of everything" on the Me tab.</li>
+      <li><strong>Delete everything</strong> from the Me tab. Your account and everything saved to it go at once, and this install gets a new random ID for usage counts.</li>
+      <li><strong>Turn off reminders</strong> in Michi or in your phone's settings.</li>
+      <li><strong>Ask us</strong> to see, correct or delete the information we hold about you. Email us, and we'll reply within 30 days. It's free.</li>
+    </ul>
+  </section>
+
+  <section id="age">
+    <h2>11. Age</h2>
+    <p>Michi is for people 18 and older. If we learn that someone younger has an account, we'll delete it.</p>
+  </section>
+
+  <section id="changes">
+    <h2>12. Changes to this policy</h2>
+    <p>If we change this policy in a way that matters to you, we'll tell you in the app before the change takes effect. The date at the top shows when it last changed.</p>
+  </section>
+
+  <section id="complaints">
+    <h2>13. Questions and complaints</h2>
+    <p>If you have a question, or think we've mishandled your information, email us. We'll reply within 30 days.</p>
+    <p>If you're not happy with our answer, you can complain to the <a href="https://www.oaic.gov.au/privacy/privacy-complaints">Office of the Australian Information Commissioner</a> on 1300&nbsp;363&nbsp;992.</p>
+    <p>Lizzie Teo<br>
+    <mark class="todo">[contact email]</mark><br>
+    Australia</p>
+  </section>
+
+</main>
+</body>
+</html>
