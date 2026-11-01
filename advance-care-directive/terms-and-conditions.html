@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advance Care Directive Terms and Conditions</title>
+<!--
+  The Advance Care Directive terms and conditions. The theme matches Michi
+
+  Placeholders still to fill are marked <mark class="todo">. Search for
+  "todo" before publishing.
+-->
+<style>
+  :root {
+    --canvas: #F6F1E2;
+    --surface: #FFFFFF;
+    --surface-muted: #E2E8D6;
+    --border: #E0DBC6;
+    --hairline: #ECE7D4;
+    --ink: #2C3324;
+    --caption: #4A5440;
+    --accent: #3D5232;
+    --on-accent: #F6F1E2;
+    --open: #7C5A1F;
+    --open-wash: #F3EAD6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --canvas: #1B2418;
+      --surface: #232E1E;
+      --surface-muted: #2E3B27;
+      --border: #3B4D33;
+      --hairline: #2E3B27;
+      --ink: #F2ECD9;
+      --caption: #CBD6BD;
+      --accent: #B6C795;
+      --on-accent: #1B2418;
+      --open: #D3A863;
+      --open-wash: #33301F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --canvas: #1B2418;
+    --surface: #232E1E;
+    --surface-muted: #2E3B27;
+    --border: #3B4D33;
+    --hairline: #2E3B27;
+    --ink: #F2ECD9;
+    --caption: #CBD6BD;
+    --accent: #B6C795;
+    --on-accent: #1B2418;
+    --open: #D3A863;
+    --open-wash: #33301F;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 16px 64px;
+  }
+
+  header { margin-bottom: 32px; }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .meta li {
+    background: var(--surface-muted);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .meta .status { background: var(--accent); color: var(--on-accent); }
+
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin: 20px 0 8px;
+  }
+
+  h3:first-of-type { margin-top: 0; }
+
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  .caption { color: var(--caption); font-size: 15px; }
+
+  a {
+    color: var(--accent);
+    text-underline-offset: 2px;
+  }
+
+  .open-block {
+    background: var(--open-wash);
+    border-color: var(--open);
+  }
+
+  ul.plain, ol.plain { margin: 0 0 12px; padding-left: 20px; }
+  ul.plain:last-child, ol.plain:last-child { margin-bottom: 0; }
+  ul.plain li, ol.plain li { margin-bottom: 4px; }
+
+  ol.contents {
+    margin: 0;
+    padding-left: 24px;
+    columns: 2 220px;
+    column-gap: 24px;
+  }
+
+  ol.contents li { margin-bottom: 4px; break-inside: avoid; }
+
+  mark.todo {
+    background: var(--open-wash);
+    color: var(--open);
+    border: 1px dashed var(--open);
+    border-radius: 4px;
+    padding: 0 4px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>Advance Care Directive terms and conditions</h1>
+    <p class="caption">The agreement between you and Lizzie Teo, who makes the Advance Care Directive website. Written in plain English, so you can read it.</p>
+    <ul class="meta">
+      <li class="status">Draft</li>
+      <li>Last updated 1 November 2026</li>
+      <li>Australian law</li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>In short</h2>
+    <ul class="plain">
+      <li>The website helps you write an advance care directive for New South Wales. It isn't legal advice or medical advice.</li>
+      <li>You need to be 18 or older to use it.</li>
+      <li>It's free. You don't need an account.</li>
+      <li>Your directive is saved to a private link. Anyone with the link can see it, so share it with care.</li>
+      <li>What you write is yours. Download the PDF as your permanent record.</li>
+      <li>Nothing here takes away your rights under the Australian Consumer Law.</li>
+    </ul>
+    <p class="caption">This summary is a guide only. The full terms below are the agreement.</p>
+  </section>
+
+  <section class="open-block">
+    <h2>This website isn't for emergencies</h2>
+    <p>If you or someone else needs urgent medical help, call 000.</p>
+  </section>
+
+  <section>
+    <h2>Contents</h2>
+    <ol class="contents">
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#agreeing">Agreeing to these terms</a></li>
+      <li><a href="#what-it-is">What the website is, and isn't</a></li>
+      <li><a href="#link">Your private link</a></li>
+      <li><a href="#your-words">What you write</a></li>
+      <li><a href="#witness">Signing and witnessing</a></li>
+      <li><a href="#cost">Cost</a></li>
+      <li><a href="#fair-use">Using the website fairly</a></li>
+      <li><a href="#ours">What belongs to us</a></li>
+      <li><a href="#others">Other services</a></li>
+      <li><a href="#privacy">Your privacy</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#ending">Ending things</a></li>
+      <li><a href="#responsibility">Our responsibility to you</a></li>
+      <li><a href="#disputes">If something goes wrong</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </section>
+
+  <section id="who">
+    <h2>1. Who we are</h2>
+    <p>The Advance Care Directive website is made and run by Lizzie Teo, a sole trader in Australia. In these terms, "we", "us" and "our" mean Lizzie. "You" means the person using the website.</p>
+    <p>We aren't affiliated with NSW Health or any government body.</p>
+    <p>You can reach us at <mark class="todo">[contact email]</mark>.</p>
+  </section>
+
+  <section id="agreeing">
+    <h2>2. Agreeing to these terms</h2>
+    <p>By using the website, you agree to these terms and to our <a href="privacy-policy.html">privacy policy</a>. If you don't agree, please don't use the website.</p>
+    <p>You need to be 18 or older, and able to make your own decisions about your health care, to write an advance care directive.</p>
+  </section>
+
+  <section id="what-it-is">
+    <h2>3. What the website is, and isn't</h2>
+    <p>The website asks you questions about your values and your wishes for future health care. It turns your answers into an advance care directive that you can sign, have witnessed, download as a PDF and share.</p>
+
+    <h3>Not legal or medical advice</h3>
+    <p>The website follows the NSW Health advance care planning framework, but it doesn't give legal or medical advice. It can't tell you whether a choice is right for you. Talk to your doctor about your health and your treatment choices. Talk to a lawyer if you have questions about the law.</p>
+
+    <h3>New South Wales only</h3>
+    <p>The website is made for New South Wales. Other states and territories, and other countries, have different laws and forms. If you live outside NSW, check what applies where you live.</p>
+
+    <h3>Your directive is up to you</h3>
+    <p>You decide what goes into your directive, and you're responsible for checking that it says what you want. Health professionals must follow a valid directive, but in some situations the law lets them act differently. We can't promise how a directive will be used.</p>
+
+    <h3>Keep it up to date</h3>
+    <p>Read your directive again when your health or your wishes change. Give the newest copy to your doctor and to the people close to you.</p>
+  </section>
+
+  <section id="link">
+    <h2>4. Your private link</h2>
+    <ul class="plain">
+      <li>You don't need an account. The website saves your answers against a random code in your link.</li>
+      <li>Anyone who has your link can see your directive and your signatures. Only share it with people you trust, such as your family, your substitute decision-maker or your doctor.</li>
+      <li>We don't know your name or email address, so we can't send you a lost link. Keep it somewhere safe, and download the PDF.</li>
+    </ul>
+  </section>
+
+  <section id="your-words">
+    <h2>5. What you write</h2>
+
+    <h3>It's yours</h3>
+    <p>Your answers, your values, your notes and your signatures all belong to you.</p>
+    <p>To run the website, we need your permission to store, copy and back up these things, and show them to anyone who opens your link. You give us that permission, for that purpose only. We never sell what you write or use it for advertising.</p>
+
+    <h3>Nobody is watching</h3>
+    <p>Nobody reviews your directive, and nobody is told about it. Your doctor, your family and your hospital don't get a copy unless you give them one.</p>
+
+    <h3>Deleting</h3>
+    <p>To delete your directive, email us your link and ask us to delete it. Deleting can't be undone, so download the PDF first if you want to keep a copy.</p>
+  </section>
+
+  <section id="witness">
+    <h2>6. Signing and witnessing</h2>
+    <ul class="plain">
+      <li>You can sign your directive on screen. Your signature is saved as a picture with your name and the time you signed.</li>
+      <li>You can share your link with a witness, who signs on their own device. Their name and signature are saved with your directive.</li>
+      <li>A witness isn't required in NSW, but NSW Health strongly recommends one. Choose an adult who isn't your substitute decision-maker and won't benefit from your decisions.</li>
+      <li>Only sign as yourself. A witness must only sign if they saw you sign, or if you told them the signature is yours.</li>
+    </ul>
+  </section>
+
+  <section id="cost">
+    <h2>7. Cost</h2>
+    <p>The website is free. There are no ads and nothing to buy. If we ever add something you pay for, we'll tell you the price before you pay, and these terms will change first.</p>
+  </section>
+
+  <section id="fair-use">
+    <h2>8. Using the website fairly</h2>
+    <p>You can use the website for your own directive, or to help someone you care for write theirs, as long as it's their wishes and they sign it themselves.</p>
+    <p>Please don't:</p>
+    <ul class="plain">
+      <li>sign a directive as someone else, or witness a signature you didn't see</li>
+      <li>try to open other people's directives, or guess their links</li>
+      <li>copy or sell the website's questions, words or design</li>
+      <li>overload, attack or interfere with the website</li>
+      <li>use the website to break the law.</li>
+    </ul>
+  </section>
+
+  <section id="ours">
+    <h2>9. What belongs to us</h2>
+    <p>The website belongs to us or to the people who licensed parts of it to us. That includes its name, the questions, the words, the illustrations, the design and the code.</p>
+    <p>You can keep, print and share your own directive and its PDF in any way you like.</p>
+    <p>If you send us ideas or feedback, we may use them to improve the website without owing you anything.</p>
+  </section>
+
+  <section id="others">
+    <h2>10. Other services</h2>
+    <p>The website relies on other services to run, such as the services that host it and store your directive. The privacy policy names them.</p>
+    <p>Other people run the websites we link to, such as NSW Health, and we aren't responsible for them.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>11. Your privacy</h2>
+    <p>Our <a href="privacy-policy.html">privacy policy</a> explains how we handle your information.</p>
+  </section>
+
+  <section id="changes">
+    <h2>12. Changes</h2>
+    <p>The website will change as we improve it. We may add, change or remove features or questions.</p>
+    <p>If we change these terms in a way that matters to you, we'll show the new date at the top of this page and a notice on the website at least 14 days ahead, where we can. If you keep using the website after a change starts, the new terms apply.</p>
+  </section>
+
+  <section id="ending">
+    <h2>13. Ending things</h2>
+    <ul class="plain">
+      <li><strong>You</strong> can stop using the website at any time, and ask us to delete your directive.</li>
+      <li><strong>We</strong> may remove a directive or block access if someone seriously breaks these terms, or puts the website or other people at risk.</li>
+      <li>If we ever close the website, we'll put a notice on it at least 30 days ahead where we can, so you can download your PDF.</li>
+    </ul>
+  </section>
+
+  <section id="responsibility">
+    <h2>14. Our responsibility to you</h2>
+    <p>The website comes with guarantees that can't be excluded under the Australian Consumer Law. Nothing in these terms takes away those rights.</p>
+    <p>Beyond those rights, and as far as the law allows:</p>
+    <ul class="plain">
+      <li>The website is provided as it is. We work to keep it running and accurate, but we can't promise it will always be available or free of mistakes.</li>
+      <li>We aren't responsible for the choices you make in your directive, or for how health professionals or other people use it.</li>
+      <li>We aren't responsible for loss we couldn't reasonably have foreseen, or for loss caused by things outside our control, such as your device, your internet connection, another service going down, or someone else getting your link.</li>
+    </ul>
+    <p>These terms don't limit any liability that the law doesn't allow to be limited.</p>
+  </section>
+
+  <section id="disputes">
+    <h2>15. If something goes wrong</h2>
+    <p>Please contact us first. Most problems can be sorted out quickly. If we can't sort it out together, you can contact <a href="https://www.fairtrading.nsw.gov.au/">NSW Fair Trading</a> or the <a href="https://www.accc.gov.au/">ACCC</a>.</p>
+    <p>The law of <mark class="todo">[state or territory]</mark>, Australia, governs these terms, and its courts can hear disputes about them.</p>
+    <p>If any part of these terms can't be enforced, the rest still applies. If we don't enforce a term straight away, we can still enforce it later. If someone else takes over the website, we may transfer these terms to them, and your rights under them won't change.</p>
+  </section>
+
+  <section id="contact">
+    <h2>16. Contact</h2>
+    <p>Lizzie Teo<br>
+    <mark class="todo">[contact email]</mark><br>
+    Australia</p>
+  </section>
+
+</main>
+</body>
+</html>

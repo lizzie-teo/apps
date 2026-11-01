@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advance Care Directive Support</title>
+<!--
+  The Advance Care Directive support page: help, contact details and the
+  way in to the terms and the privacy policy beside it. The theme matches those
+  two pages.
+
+  Placeholders still to fill are marked <mark class="todo">. Search for
+  "todo" before publishing.
+-->
+<style>
+  :root {
+    --canvas: #F6F1E2;
+    --surface: #FFFFFF;
+    --surface-muted: #E2E8D6;
+    --border: #E0DBC6;
+    --hairline: #ECE7D4;
+    --ink: #2C3324;
+    --caption: #4A5440;
+    --accent: #3D5232;
+    --on-accent: #F6F1E2;
+    --open: #7C5A1F;
+    --open-wash: #F3EAD6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --canvas: #1B2418;
+      --surface: #232E1E;
+      --surface-muted: #2E3B27;
+      --border: #3B4D33;
+      --hairline: #2E3B27;
+      --ink: #F2ECD9;
+      --caption: #CBD6BD;
+      --accent: #B6C795;
+      --on-accent: #1B2418;
+      --open: #D3A863;
+      --open-wash: #33301F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --canvas: #1B2418;
+    --surface: #232E1E;
+    --surface-muted: #2E3B27;
+    --border: #3B4D33;
+    --hairline: #2E3B27;
+    --ink: #F2ECD9;
+    --caption: #CBD6BD;
+    --accent: #B6C795;
+    --on-accent: #1B2418;
+    --open: #D3A863;
+    --open-wash: #33301F;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 16px 64px;
+  }
+
+  header { margin-bottom: 32px; }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
+
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin: 20px 0 8px;
+  }
+
+  h3:first-of-type { margin-top: 0; }
+
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  .caption { color: var(--caption); font-size: 15px; }
+
+  a {
+    color: var(--accent);
+    text-underline-offset: 2px;
+  }
+
+  .open-block {
+    background: var(--open-wash);
+    border-color: var(--open);
+  }
+
+  ul.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.links li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  ul.links li:first-child { padding-top: 0; }
+  ul.links li:last-child { border-bottom: none; padding-bottom: 0; }
+
+  ul.links a { font-weight: 600; }
+
+  ul.links .caption { display: block; margin-top: 2px; }
+
+  mark.todo {
+    background: var(--open-wash);
+    color: var(--open);
+    border: 1px dashed var(--open);
+    border-radius: 4px;
+    padding: 0 4px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>Advance Care Directive</h1>
+    <p class="caption">A free website that helps you write down your wishes for future health care in New South Wales. This page has help, contact details and the legal documents.</p>
+  </header>
+
+  <section class="open-block">
+    <h2>This website isn't for emergencies</h2>
+    <p>If you or someone else needs urgent medical help, call 000.</p>
+    <p>This website isn't legal or medical advice. For advice about your directive, talk to your doctor or a lawyer.</p>
+  </section>
+
+  <section>
+    <h2>Get in touch</h2>
+    <p>Email <mark class="todo">[contact email]</mark>. Tell us what happened and which device you use, and we'll get back to you.</p>
+  </section>
+
+  <section>
+    <h2>Common questions</h2>
+
+    <h3>Do I need an account?</h3>
+    <p>No. Your answers are saved to a private link. Keep that link somewhere safe. Anyone who has it can see your directive.</p>
+
+    <h3>I've lost my link</h3>
+    <p>We can't find your directive without the link, because we don't know your name or email address. If you downloaded the PDF, use that copy. If not, you can start a new directive.</p>
+
+    <h3>Is my directive legal?</h3>
+    <p>Advance care directives are legally recognised in NSW. A witness isn't required, but NSW Health strongly recommends one. Give a copy to your doctor and to the people close to you.</p>
+
+    <h3>How do I delete my directive?</h3>
+    <p>Email us your link and ask us to delete it. We'll delete your answers and signatures and tell you when it's done.</p>
+  </section>
+
+  <section>
+    <h2>The legal bits</h2>
+    <ul class="links">
+      <li><a href="terms-and-conditions.html">Terms and conditions</a><span class="caption">The agreement for using the website.</span></li>
+      <li><a href="privacy-policy.html">Privacy policy</a><span class="caption">What the website keeps, where it goes and what you can do about it.</span></li>
+    </ul>
+  </section>
+
+  <p class="caption">Advance Care Directive is made by Lizzie Teo in Australia. It isn't affiliated with NSW Health or any government body.</p>
+
+</main>
+</body>
+</html>
